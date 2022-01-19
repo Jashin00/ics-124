@@ -24,10 +24,10 @@ public class Encrypter {
        
        for(int i = 0; i < normalWord.length(); i++){
            char myChar = normalWord.charAt(i);
-           if (normalWord.charAt(i) < 'z' &&  true){
-               myChar = (char)(normalWord.charAt(i) + 3);
+           if (normalWord.charAt(i) < 'z' &&  !shiftToLeft){
+               myChar = (char)(normalWord.charAt(i) + shiftAmount);
            }else{
-               myChar = (char)(normalWord.charAt(i) - (26 - 3));
+               myChar = (char)(normalWord.charAt(i) - (26 - shiftAmount));
            }
            result.append(myChar);
        }
