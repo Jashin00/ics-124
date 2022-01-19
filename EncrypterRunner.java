@@ -15,7 +15,6 @@ public class EncrypterRunner{
           System.out.println("Input word: " + inputWord);
           System.out.println("Your encrypted word: " + encryptedWord);
           System.out.println("Expected encrypted word: " + "khoor");
- 
        }
     }
  }
