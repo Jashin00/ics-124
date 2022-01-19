@@ -12,21 +12,17 @@ public class Encrypter {
        // Complete Part A 
        this.shiftAmount = shiftAmount;
        this.shiftToLeft = shiftToLeft;
-        for (int i = 0; i < normalAlphabet.length; i++){
-            encryptAlphabet[i] = normalAlphabet[i];
-        }
     } 
  
     public String encrypt(String normalWord) { 
        // Complete Part B 
-       //Encrypter amount = new Encrypter(shiftAmount, shiftToLeft);
        StringBuilder result = new StringBuilder();
        
        for(int i = 0; i < normalWord.length(); i++){
            char myChar = normalWord.charAt(i);
            if (normalWord.charAt(i) < 'z' &&  !shiftToLeft){
                myChar = (char)(normalWord.charAt(i) + shiftAmount);
-           }else{
+           } else {
                myChar = (char)(normalWord.charAt(i) - (26 - shiftAmount));
            }
            result.append(myChar);
