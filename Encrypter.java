@@ -32,8 +32,6 @@ public class Encrypter {
            result.append(myChar);
        }
        return result.toString();
-
-
     }
  }
  
